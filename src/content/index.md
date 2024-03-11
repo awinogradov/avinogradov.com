@@ -23,7 +23,7 @@ I&nbsp;have worked with&nbsp;various organizations, including banks, IT&nbsp;gia
 
 For the past few years, I&nbsp;have had the opportunity to&nbsp;work at&nbsp;Yandex, Sber, and&nbsp;Alfa-Bank, where&nbsp;I served as&nbsp;the software architect for a&nbsp;new approach to&nbsp;product development and&nbsp;as&nbsp;an&nbsp;engineering manager for creating scalable and&nbsp;productive development teams for the main company products.
 
-[Read the full story...](/cv)
+[Read the full story...](cv)
 
 ---
 
