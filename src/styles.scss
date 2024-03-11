@@ -169,12 +169,5 @@ main {
         margin-top: 24px;
 
         font-size: 11px;
-        color: var(--text-ghost);
-
-        transition: color 300ms ease-in-out;
-
-        &:hover {
-            color: #EC8786;
-        }
     }
 }

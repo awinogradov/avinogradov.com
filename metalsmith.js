@@ -122,6 +122,7 @@ ms.build((err) => {
         } else {
             devServer = browserSync.create();
             devServer.init({
+                open: false,
                 host: 'localhost',
                 server: './build',
                 port: 3000,

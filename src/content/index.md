@@ -31,4 +31,4 @@ Reach out to&nbsp;me&nbsp;at&nbsp;[winogradovaa@gmail.com](mailto:winogradovaa@g
 Drop&nbsp;me&nbsp;at&nbsp;any time&nbsp;on&nbsp;[Telegram](https://t.me/@tony_vi).
 Also, follow&nbsp;me&nbsp;on&nbsp;[GitHub](https://github.com/awinogradov) and&nbsp;[Instagram](https://instagram.com/tony__vi).
 
-<div class="emoji">❤</div>
+<div class="emoji">❤️</div>
