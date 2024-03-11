@@ -2,8 +2,6 @@
   "title": "Anton Vinogradov",
   "description": "Personal website",
   "author": "Anton Vinogradov",
-  "basePath": "https://awinogradov.github.io/avinogradov.com",
-  "siteOwner": "Werner Glinka",
   "validate": {
     "google": "",
     "ms": ""

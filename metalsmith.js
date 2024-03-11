@@ -1,8 +1,8 @@
 /* eslint-disable import/no-extraneous-dependencies */
 
-import browserSync from "browser-sync";
 import { fileURLToPath } from "node:url";
 import { dirname } from "node:path";
+import browserSync from "browser-sync";
 import Metalsmith from "metalsmith";
 import markdown from "@metalsmith/markdown";
 import layouts from "@metalsmith/layouts";
@@ -12,14 +12,13 @@ import permalinks from "@metalsmith/permalinks";
 import htmlMinifier from "metalsmith-html-minifier";
 import assets from "metalsmith-static-files";
 import metadata from "@metalsmith/metadata";
-import prism from "metalsmith-prism";
 import * as marked from "marked";
 
 // ESM does not currently import JSON modules by default.
 // Ergo we'll JSON.parse the file manually
-import * as fs from "fs";
+import { readFileSync } from "fs";
 
-const { dependencies } = JSON.parse(fs.readFileSync("./package.json"));
+const { devDependencies } = JSON.parse(readFileSync("./package.json"));
 
 /* eslint-disable no-underscore-dangle */
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -59,8 +58,6 @@ const templateConfig = {
 };
 
 function noop() {}
-// to use a plugin conditionally, use this pattern:
-// .use( isProduction ? htmlMinifier() : noop ) )
 
 let devServer = null;
 
@@ -70,13 +67,14 @@ function msBuild() {
     .watch(isProduction ? false : ["src", "layouts"])
     .source("./src/content")
     .destination("./build")
-    .metadata({
-      msVersion: dependencies.metalsmith,
-      nodeVersion: process.version,
-    })
 
     .use(isProduction ? noop : drafts())
 
+    .metadata({
+      msVersion: devDependencies.metalsmith,
+      nodeVersion: process.version,
+      baseUrl: process.env.BASE_URL,
+    })
     .use(
       metadata({
         site: "src/content/data/site.json",
@@ -102,20 +100,13 @@ function msBuild() {
     .use(layouts(templateConfig))
 
     .use(
-      prism({
-        lineNumbers: true,
-        decode: true,
-      })
-    )
-
-    .use(
       assets({
         source: "src/assets/",
         destination: "assets/",
       })
     )
 
-    .use(isProduction ? htmlMinifier() : noop);
+    .use(htmlMinifier());
 }
 
 const ms = msBuild();
