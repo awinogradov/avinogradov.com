@@ -13,6 +13,7 @@ import htmlMinifier from 'metalsmith-html-minifier';
 import assets from 'metalsmith-static-files';
 import metadata from '@metalsmith/metadata';
 import * as marked from 'marked';
+import { baseUrl } from 'marked-base-url';
 
 // ESM does not currently import JSON modules by default.
 // Ergo we'll JSON.parse the file manually
@@ -33,7 +34,7 @@ const blogDate = (string) =>
 const trimSlashes = (string) => string.replace(/(^\/)|(\/$)/g, '');
 const md = (mdString) => {
     try {
-        return marked.parse(mdString, { mangle: false, headerIds: false });
+        return marked.use(baseUrl(process.env.BASE_URL)).parse(mdString, { mangle: false, headerIds: false });
     } catch (e) {
         return mdString;
     }

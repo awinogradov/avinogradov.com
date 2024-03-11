@@ -27,7 +27,7 @@ For the past few years, I&nbsp;have had the opportunity to&nbsp;work at&nbsp;Yan
 
 ---
 
-Reach out to&nbsp;me&nbsp;at&nbsp;[winogradovaa@gmail.com](mailto:winogradovaa@gmail.com). 
+Reach out to&nbsp;me&nbsp;at&nbsp;[winogradovaa@gmail.com](mailto:winogradovaa@gmail.com).
 Drop&nbsp;me&nbsp;at&nbsp;any time&nbsp;on&nbsp;[Telegram](https://t.me/@tony_vi).
 Also, follow&nbsp;me&nbsp;on&nbsp;[GitHub](https://github.com/awinogradov) and&nbsp;[Instagram](https://instagram.com/tony__vi).
 
