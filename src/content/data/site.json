@@ -1,8 +1,8 @@
 {
-  "title": "Metalsmith Bare-bones Starter",
-  "description": "Metalsmith Starter with Nunjucks templating",
-  "author": "werner@glinka.co",
-  "siteURL": "https://ms-bare-bone-starter.netlify.app/",
+  "title": "Anton Vinogradov",
+  "description": "Personal website",
+  "author": "Anton Vinogradov",
+  "basePath": "https://awinogradov.github.io/avinogradov.com",
   "siteOwner": "Werner Glinka",
   "validate": {
     "google": "",
@@ -12,5 +12,5 @@
     "linkedIn": "",
     "github": ""
   },
-  "socialImage": "/assets/images/metalsmith/starter/social.png"
+  "socialImage": ""
 }
