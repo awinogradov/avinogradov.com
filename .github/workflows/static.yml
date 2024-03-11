@@ -45,7 +45,7 @@ jobs:
       - name: Setup packages
         run: npm ci
       - name: Build
-        run: npm run build
+        run: BASE_URL=${{ vars.BASE_URL }} npm run build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
