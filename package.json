@@ -6,9 +6,9 @@
   "author": "winogradovaa@gmaiil.com",
   "license": "MIT",
   "scripts": {
-    "start": "cross-env NODE_ENV=development DEBUG=@metalsmith* concurrently \"node metalsmith.js\" \"npx postcss src/styles.scss -o build/assets/styles.css -w\"",
+    "start": "cross-env NODE_ENV=development DEBUG=@metalsmith* concurrently \"node metalsmith.js\" \"npm run build:css -- -w\"",
     "build:css": "npx postcss src/styles.scss -o build/assets/styles.css",
-    "build": "cross-env NODE_ENV=production node metalsmith.js && npm run build:css",
+    "build": "cross-env NODE_ENV=production concurrently \"node metalsmith.js\" \"npm run build:css\"",
     "serve": "browser-sync start --server 'build'",
     "lint": "eslint --fix ."
   },
@@ -37,7 +37,8 @@
     "postcss-cli": "11.0.0",
     "postcss-lightningcss": "1.0.0",
     "postcss-nesting": "12.1.0",
-    "prettier": "3.2.4"
+    "prettier": "3.2.4",
+    "prettier-plugin-css-order": "2.0.1"
   },
   "engines": {
     "node": ">=20.9.0"
