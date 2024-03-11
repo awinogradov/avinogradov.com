@@ -1,0 +1,9 @@
+{
+  "menu": [
+    {
+      "label": "CV",
+      "url": "/cv",
+      "bodyClass": "cv"
+    }
+  ]
+}

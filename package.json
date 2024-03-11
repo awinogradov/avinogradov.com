@@ -1,0 +1,45 @@
+{
+  "name": "avinogradov.com",
+  "version": "1.0.0",
+  "description": "Anton Vinogradov — personal website",
+  "type": "module",
+  "author": "winogradovaa@gmaiil.com",
+  "license": "MIT",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development DEBUG=@metalsmith* node metalsmith.js",
+    "build": "cross-env NODE_ENV=production node metalsmith.js",
+    "serve": "browser-sync start --server 'build'",
+    "lint": "eslint --fix ."
+  },
+  "devDependencies": {
+    "browser-sync": "3.0.2",
+    "chokidar": "3.5.3",
+    "cross-env": "7.0.3",
+    "eslint": "8.56.0",
+    "eslint-config-airbnb": "19.0.4",
+    "eslint-config-prettier": "9.1.0",
+    "eslint-plugin-import": "2.29.1",
+    "eslint-plugin-prettier": "5.1.3",
+    "prettier": "3.2.4"
+  },
+  "dependencies": {
+    "@metalsmith/collections": "1.3.0",
+    "@metalsmith/drafts": "1.3.0",
+    "@metalsmith/layouts": "2.7.0",
+    "@metalsmith/markdown": "1.10.0",
+    "@metalsmith/metadata": "0.3.0",
+    "@metalsmith/permalinks": "3.0.1",
+    "jstransformer-nunjucks": "1.2.0",
+    "marked": "11.2.0",
+    "metalsmith": "2.6.2",
+    "metalsmith-debug-ui": "0.3.2",
+    "metalsmith-html-minifier": "4.0.1",
+    "metalsmith-if": "0.1.1",
+    "metalsmith-metadata": "0.0.4",
+    "metalsmith-prism": "4.2.2",
+    "metalsmith-static-files": "0.3.0"
+  },
+  "engines": {
+    "node": ">=20.9.0"
+  }
+}

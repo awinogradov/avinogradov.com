@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {% include "partials/head.njk" %}
+  </head>
+
+  <body class="{{ bodyClass }}">
+    <main>
+      {% block body %}
+      {# will be replaced by page content #}
+      {% endblock %}
+    </main>    
+  </body>
+</html>
