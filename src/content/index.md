@@ -10,7 +10,7 @@ seo:
 
 # Anton Vinogradov [#](#anton-vinogradov-)
 
-A&nbsp;passionate engineer and technical manager with over 10&nbsp;years of&nbsp;experience in&nbsp;enterprise software development, teams managment, hiring and&nbsp;etc.
+A&nbsp;passionate engineer and technical manager with over 10&nbsp;years of&nbsp;experience in&nbsp;enterprise software development & teams management.
 
 ## Recently [#](#right-now-)
 
